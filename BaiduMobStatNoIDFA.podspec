@@ -51,7 +51,7 @@ Pod::Spec.new do |spec|
   #  profile URL.
   #
 
-  spec.author             = { "muzi131313" => "muzi131313@163.com" }
+  spec.authors             = { "muzi131313" => "muzi131313@163.com" }
   # Or just: spec.author    = "muzi131313"
   # spec.authors            = { "muzi131313" => "muzi131313@163.com" }
   # spec.social_media_url   = "https://twitter.com/test"
@@ -62,7 +62,7 @@ Pod::Spec.new do |spec|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  # spec.platform     = :ios
+  spec.platform     = :ios, "8.0"
   # spec.platform     = :ios, "5.0"
 
   #  When using multiple platforms
@@ -89,7 +89,8 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "Classes", "BaiduMobStat/*.{h,m}"
+  spec.source_files = "BaiduMobStat/*.{h,m}"
+  # spec.source_files  = "Classes", "BaiduMobStat/*.{h,m}"
   # spec.exclude_files = "Classes/Exclude"
 
   spec.public_header_files = "BaiduMobStat/*.h"
