@@ -89,19 +89,19 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files = "BaiduMobStat/*.{h,m,a}"
+  spec.source_files = "BaiduMobStat/*.{h}"
   # spec.source_files  = "Classes", "BaiduMobStat/*.{h,m}"
   # spec.exclude_files = "Classes/Exclude"
 
   spec.public_header_files = "BaiduMobStat/*.h"
 
-  # spec.framework      = 'SystemConfiguration'
-  # spec.ios.framework  = 'UIKit'
+  spec.framework      = 'SystemConfiguration'
+  spec.ios.framework  = 'UIKit'
   # spec.osx.framework  = 'AppKit'
 
-  spec.vendored_libraries = 'libBaiduMobStat.a'
+  spec.vendored_libraries = 'BaiduMobStat/*.{a}'
 
-  # spec.static_framework = true
+  spec.static_framework = true
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
